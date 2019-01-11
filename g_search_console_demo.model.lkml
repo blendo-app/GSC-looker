@@ -11,3 +11,5 @@ datagroup: g_search_console_demo_default_datagroup {
 persist_with: g_search_console_demo_default_datagroup
 
 explore: gwmt_report {}
+
+explore: ga_report {}
