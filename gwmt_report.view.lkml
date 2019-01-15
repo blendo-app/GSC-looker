@@ -52,7 +52,7 @@ view: gwmt_report {
 
   dimension: position {
     type: number
-    sql: ${TABLE}.position ;;
+    sql: round(${TABLE}.position) ;;
   }
 
   dimension: query {
