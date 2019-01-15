@@ -49,8 +49,8 @@ view: ga_report_agg {
     sql: ${TABLE}.ga_landingpagepath ;;
   }
 
-  dimension: landingpagepath_complete {
+  dimension: page {
     type: string
-    sql:  CONCAT("https://www.blendo.co","", ga_landingpagepath) ;;
+    sql:  ${TABLE}.page ;;
   }
 }
