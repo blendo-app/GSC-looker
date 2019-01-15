@@ -54,8 +54,18 @@ view: ga_report {
     sql: ${TABLE}.ga_newusers ;;
   }
 
+  measure: total_newusers {
+    type: sum
+    sql: ${TABLE}.ga_newusers ;;
+  }
+
   dimension: ga_sessions {
     type: number
+    sql: ${TABLE}.ga_sessions ;;
+  }
+
+  measure: total_sessions {
+    type: sum
     sql: ${TABLE}.ga_sessions ;;
   }
 
