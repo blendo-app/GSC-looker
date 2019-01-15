@@ -44,6 +44,11 @@ view: ga_report {
     type: string
     sql:  CONCAT("https://www.blendo.co","", ga_landingpagepath) ;;
   }
+
+  measure: goal_completions {
+    type: sum
+    sql: ${TABLE}.ga_goal17completions ;;
+  }
   dimension: ga_newusers {
     type: number
     sql: ${TABLE}.ga_newusers ;;
